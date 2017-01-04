@@ -35,6 +35,16 @@ pushstate-server build
 open http://localhost:9000
 ```
 
-### `npm run deploy`
+### `npm run deploy-*`
 
-Deploy app to Now server, please refer to this post:  [Zero Configuration Deployment for React app with Zeit Now](https://medium.com/@kawixiao/zero-configuration-deployment-for-react-apps-with-zeits-now-4f002be98c#.eyvj3mjdb)
+### Deploy to Now server
+```bash
+npm run deploy-now
+```
+For more infor on how to deploy app to Now server, please refer to this post:  [Zero Configuration Deployment for React app with Zeit Now](https://medium.com/@kawixiao/zero-configuration-deployment-for-react-apps-with-zeits-now-4f002be98c#.eyvj3mjdb)
+
+### Deploy to Github page
+```bash
+npm run deploy-gh
+```
+Please configure the 'homepage' in package.json before deploying.

@@ -80,10 +80,10 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js  && sw-precache --config=sw-precache-config.js",
     "test": "node scripts/test.js --env=jsdom",
-    "deploy": "npm run build && ns build",
+    "deploy-now": "npm run build && ns build",
     "deploy-gh": "npm run build&&gh-pages -d build"
   },
-  "homepage": "https://bowen31337.github.io/react-app-demo",
+  "homepage": "https://bowen31337.github.io/",
   "jest": {
     "moduleFileExtensions": [
       "jsx",
