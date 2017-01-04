@@ -48,9 +48,6 @@ class Widget extends Component{
       }
     </tbody>
   )
-
-
-
   render(){
     const { data, loading, error } = this.props
     let limit = 5

@@ -7,7 +7,7 @@ This project is an "eject" version of create-react-app,but added with more featu
 - add service-worker for production (Progressive Web Apps)
 
 ### Project Description
-The widget reads the end user’s current location using navigator.geolocation, and retrieves the current weather conditions for that location using the [Open Weather Map API](http://openweathermap.org/current).
+The widget reads a list of data (5000 items) from remote endpoint, renders with pagination in a table.
 
 ### `npm start`
 
