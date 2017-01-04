@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { Pagination } from 'react-bootstrap'
+import Pagination  from 'react-bootstrap/lib/Pagination'
 
 import spinner from '../assets/images/infinity.gif'
 
@@ -9,7 +9,6 @@ class Widget extends Component{
     this.state = {page: 1}
     this.selectPage = this.selectPage.bind(this)
   }
-
   selectPage = page => this.setState({page:page})
 
   componentWillMount(){
@@ -71,7 +70,7 @@ class Widget extends Component{
 
     return (
       <div className="container">
-      <h1>React Demo - rendering 5000 items in a list</h1> 
+      <h1>React Demo - rendering 5000 items in a list</h1>
       <table className="widget-wrapper table table-striped table-bordered table-condensed table-hover">
       {this.tableHead()}
       {this.tableBody(data, limit, (page - 1)*limit)}

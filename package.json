@@ -1,6 +1,6 @@
 {
-  "name": "React-APP-Starter",
-  "version": "0.1.0",
+  "name": "React-APP-Demo",
+  "version": "0.1.9",
   "private": true,
   "author": {
     "name": "Bowen",
@@ -67,7 +67,6 @@
   },
   "dependencies": {
     "axios": "0.15.2",
-    "bootstrap": "3",
     "react": "15.4.1",
     "react-bootstrap": "^0.30.7",
     "react-dom": "15.4.1",
@@ -84,6 +83,7 @@
     "deploy": "npm run build && ns build",
     "deploy-gh": "npm run build&&gh-pages -d build"
   },
+  "homepage": "https://bowen31337.github.io/react-app-demo",
   "jest": {
     "moduleFileExtensions": [
       "jsx",

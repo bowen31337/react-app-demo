@@ -57,8 +57,8 @@ module.exports = {
   // In production, we only want to load the polyfills and the app code.
   entry: {
     polyfills:require.resolve('./polyfills'),
-    app:paths.appIndexJs,
-    vendor:vendors
+    vendor:vendors,
+    app:paths.appIndexJs
   },
   output: {
     // The build folder.
@@ -232,7 +232,10 @@ module.exports = {
     new ManifestPlugin({
       fileName: 'asset-manifest.json'
     }),
-    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/)
+    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
+    new webpack.optimize.CommonsChunkPlugin({
+        names: ['app', 'vendor'],
+      })
   ],
   // Some libraries import Node modules but don't use them in the browser.
   // Tell Webpack to provide empty mocks for them so importing them works.
