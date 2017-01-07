@@ -3,6 +3,8 @@ import { shallow } from 'enzyme'
 import Widget from './Widget'
 import expectedJson from '../constants/expectedJson.json'
 
+const pageSize = 5
+
 function setup() {
   const props = {
     data: expectedJson,
@@ -22,6 +24,6 @@ function setup() {
 describe('widget component', () => {
     it('should render the list', () => {
       const { enzymeWrapper } = setup()
-      expect(enzymeWrapper.find('tbody tr').length).toEqual(expectedJson.length)
+      expect(enzymeWrapper.find('tbody tr').length).toEqual(pageSize)
     })
 })

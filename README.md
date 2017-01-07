@@ -2,12 +2,13 @@
 
 This project is an "eject" version of create-react-app,but added with more features/changes below:
 - Yarn package management
+- Webpack upgraded to version 2
 - move babel config from package.json to .bablesc
-- multi-entries, code splitting on production
+- multi-entries, code splitting, tree shaking on production
 - add service-worker for production (Progressive Web Apps)
 
 ### Project Description
-The widget reads a list of data (5000 items) from remote endpoint, renders with pagination in a table.
+The widget reads a list of data (5000 items) from remote endpoint, renders with pagination in a table. the link of demo is [https://ns-gjigbhyuxp.now.sh](https://ns-gjigbhyuxp.now.sh)
 
 ### `npm start`
 
