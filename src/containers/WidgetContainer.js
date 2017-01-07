@@ -17,13 +17,13 @@ const mapDispatchToProps = (dispatch, ownPros) => {
           if (response.status === 200) {
               dispatch(action.fetchContentsSuccess(response.data))
           } else {
-            dispatch(action.fetchContentsFailure(response.statusText))
+            dispatch(action.fetchContentsFailture(response.statusText))
           }
         },
         error => {
-          dispatch(action.fetchContentsFailure(error))
+          dispatch(action.fetchContentsFailture(error))
         }
-      )
+      ).catch( error => dispatch(action.fetchContentsFailture("network error")))
 
    	}
   }

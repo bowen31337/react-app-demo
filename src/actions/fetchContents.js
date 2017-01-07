@@ -5,10 +5,10 @@ import * as endpoint from '../constants/endpoints'
 
 export const fetchContents = () => {
 	const request = axios({
-    method: 'get',
-    url: endpoint.CONTENT_ENDPOINT,
-    headers: []
-  })
+		method: 'get',
+		url: endpoint.CONTENT_ENDPOINT,
+		headers: []
+	})
 	return {
 		type:types.FETCH_CONTENTS,
 		payload:request
@@ -24,7 +24,7 @@ export const fetchContentsSuccess = (data) => {
 
 export const fetchContentsFailture = (error) => {
 	return {
-		type:types.FETCH_CONTENTS_SUCCESS,
+		type:types.FETCH_CONTENTS_FAILURE,
 		payload:error
 	}
 }
